@@ -1,5 +1,10 @@
 from __future__ import absolute_import, unicode_literals
 
+# Additional Settings
+ACCOUNTS_NO_USERNAME = True
+ACCOUNTS_VERIFICATION_REQUIRED = True
+FORMS_USE_HTML5 = True
+
 ######################
 # MEZZANINE SETTINGS #
 ######################
@@ -231,6 +236,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
+    "default_theme",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
